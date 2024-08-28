@@ -7,8 +7,15 @@ const path = require("path");
 const cors = require("cors");
 const port = process.env.PORT || 4000;
 
+const corsConfig = {
+  origin: "*",
+  credential: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+};
+app.options("", cors(corsConfig));
+
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsConfig));
 
 // Database Connection With MongoDB
 require("dotenv").config(); // Load environment variables
