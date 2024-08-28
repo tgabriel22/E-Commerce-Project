@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: start; */
+  padding: 15px 60px;
+  box-shadow: 0 1px 3px -2px black;
+  margin-bottom: 1px;
+  background: white;
+}
+.navbar img {
+  /* width: 200px; */
+  /* width: 50px; */
+  width: 50px;
+  height: 50px;
+}
+.nav-leftSide {
+  display: flex;
+}
+.logoText {
+  margin: 0;
+  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* what i added */
+.logoText .lightgreen {
+  /* color: aquamarine; */
+  color: rgb(4, 185, 185);
+}
+
+.logoText .pink {
+  color: rgb(235, 131, 212);
+}
+
+.logoText .yellow {
+  color: orange;
+}
+/* -- - - - - - - - */
+
+.admPanel {
+  color: red;
+  font-weight: 600;
+  font-style: normal;
+}
+.nav-profile {
+  /* width: 75px; */
+  width: 80px !important;
+}
+@media (max-width: 800px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+  .nav-logo {
+    width: 150px;
+  }
+  .nav-profile {
+    width: 60px;
+  }
+}
