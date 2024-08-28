@@ -7,15 +7,8 @@ const path = require("path");
 const cors = require("cors");
 const port = process.env.PORT || 4000;
 
-const corsConfig = {
-  origin: "*",
-  credential: true,
-  methods: ["GET", "POST", "PUT", "DELETE"],
-};
-app.options("", cors(corsConfig));
-
 app.use(express.json());
-app.use(cors(corsConfig));
+app.use(cors());
 
 // Database Connection With MongoDB
 require("dotenv").config(); // Load environment variables
@@ -46,7 +39,7 @@ app.post("/upload", upload.single("product"), (req, res) => {
 });
 
 // Route for Images folder
-// app.use("/images", express.static("upload/images"));
+app.use("/images", express.static("upload/images"));
 
 // MiddleWare to fetch user from token
 const fetchuser = async (req, res, next) => {
