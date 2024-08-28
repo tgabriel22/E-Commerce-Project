@@ -11,12 +11,14 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect(
-  "mongodb+srv://gabrielthierry509:12345$$$@cluster0.rzznq.mongodb.net/e-commerce"
-);
-
-// paste your mongoDB Connection string above with password
-// password should not contain '@' special character
+require("dotenv").config(); // Load environment variables
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.log(err));
 
 //Image Storage Engine
 const storage = multer.diskStorage({
