@@ -46,7 +46,7 @@ app.post("/upload", upload.single("product"), (req, res) => {
 });
 
 // Route for Images folder
-app.use("/images", express.static("upload/images"));
+// app.use("/images", express.static("upload/images"));
 
 // MiddleWare to fetch user from token
 const fetchuser = async (req, res, next) => {
