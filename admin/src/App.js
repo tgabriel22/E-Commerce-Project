@@ -3,8 +3,10 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Admin from "./Pages/Admin";
 
-export const backend_url = 'http://localhost:4000';
-export const currency = '$';
+// export const backend_url = 'http://localhost:4000';
+export const backend_url =
+  "https://e-commerce-project-server-9thx.onrender.com";
+export const currency = "$";
 
 function App() {
   return (

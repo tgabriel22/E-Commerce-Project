@@ -10,7 +10,9 @@ import men_banner from "./Components/Assets/banner_mensEdit.png";
 import kid_banner from "./Components/Assets/banner_kidsEdit.png";
 import LoginSignup from "./Pages/LoginSignup";
 
-export const backend_url = "http://localhost:4000";
+// export const backend_url = "http://localhost:4000";
+export const backend_url =
+  "https://e-commerce-project-server-9thx.onrender.com";
 export const currency = "$";
 
 function App() {
