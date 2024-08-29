@@ -13,4 +13,6 @@ The front-end, built with React.js, includes product displays, a shopping cart, 
 - **Database**: MongoDB
 - **API**: RESTful APIs with Express
 #
-<a href="#" onclick="window.open('https://e-commerce-project-frontend-ehmd.onrender.com', '_blank')">View Live Project</a>
+
+[View Live Project](https://e-commerce-project-frontend-ehmd.onrender.com)
+
