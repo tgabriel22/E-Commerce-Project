@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 // import navlogo from "../Assets/nav-logo.svg";
 import logo from "../Assets/CompanyLogoedit.jpg";
-import navprofileIcon from "../Assets/nav-profile.svg";
+import navprofileIcon from "../Assets/ProfileIcon.jpeg";
 
 const Navbar = () => {
   return (
