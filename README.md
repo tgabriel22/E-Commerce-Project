@@ -14,4 +14,4 @@ The front-end, built with React.js, includes product displays, a shopping cart, 
 - **API**: RESTful APIs with Express
 
 
-[View Live Project]([https://example.com](https://e-commerce-project-frontend-ehmd.onrender.com))
+[View Live Project](https://e-commerce-project-frontend-ehmd.onrender.com)
